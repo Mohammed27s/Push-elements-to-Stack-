@@ -1,0 +1,45 @@
+import java.util.Stack;
+import  java.util.Scanner;
+
+public class stack {
+    public static Stack<Integer> threePush = new Stack<>();
+    public static Scanner in = new Scanner(System.in);
+    public static Integer input;
+    public static Integer catcher;
+    public static Integer i;
+    public static void main(String[] args)
+    {
+
+
+          System.out.println("Push Elements to a Stack"+"\n");
+
+          addContents();
+
+
+
+
+    }
+
+    public static void addContents(){
+
+        for(Integer i = 0; threePush.size() < 3; i++){
+
+            System.out.println("Enter the three elements to the Stack....One by one ");
+            catcher = threePush.push( input = in.nextInt());
+
+            if(catcher.equals(input)){
+
+                System.out.println(" | "+catcher+" |"+" ==> pushed to the stack "+"\n");
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+}
